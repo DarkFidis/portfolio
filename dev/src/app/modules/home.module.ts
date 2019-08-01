@@ -5,7 +5,7 @@ const COMPONENTS = [];
 
 @NgModule({
   declarations: COMPONENTS,
-  exports: COMPONENTS
+  exports: COMPONENTS,
   imports: [
     CommonModule
   ]
