@@ -4,6 +4,7 @@ import { PresentationComponent } from '../components/presentation/presentation.c
 export const HOME_ROUTING: Route[] = [
   {
     path: '',
+    pathMatch: 'full',
     component: PresentationComponent
   }
 ];
