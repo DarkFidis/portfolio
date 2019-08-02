@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./presentation.component.css']
 })
 export class PresentationComponent implements OnInit {
+  public age: Number = new Date(Date.now()).getYear() - 90;
+  public timedev: Number = new Date(Date.now()).getYear() - 116;
 
   constructor() { }
 
