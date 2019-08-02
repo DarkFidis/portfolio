@@ -8,6 +8,6 @@ export const APP_ROUTING: Route[] = [
   },
   {
     path: 'home',
-    loadChildren: 'app/modules/home.module#HomeModule'
+    loadChildren: 'src/app/modules/home.module#HomeModule'
   }
 ];
