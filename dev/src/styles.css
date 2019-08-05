@@ -1,17 +1,7 @@
-body {
-  background-image: url("assets/img/fond.jpg");
-  background-size:cover;
-  background-repeat: no-repeat;
-}
-
 * {
   font-family: Verdana;
 }
 
 a {
   color:#fff;
-}
-
-li {
-  background-color: rgba(20,14,7, 0.5);
 }
