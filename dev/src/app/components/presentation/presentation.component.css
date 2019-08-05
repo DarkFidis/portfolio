@@ -1,15 +1,4 @@
-img {
-  float: left;
-  margin: 0 10px 10px 0;
-}
-
-p {
-  color: white;
-  font-size: 12px;
-}
-
 .banner {
-
   background-size: cover;
   background-position: center;
   padding: 150px 0;
@@ -25,9 +14,8 @@ p {
 }
 
 .banner p {
-  font-size: 20px;
+  font-size: 15px;
   color: white;
   opacity: .7;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  font-family: 'BenchNine', sans-serif;
 }

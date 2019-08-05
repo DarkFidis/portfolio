@@ -18,7 +18,6 @@ h1 {
   font-size: 24px;
   text-align: center;
   margin: 15px 0;
-  font-family: 'Special Elite', cursive;
 }
 
 ul {
@@ -29,7 +28,6 @@ ul {
 }
 
 a {
-  font-family: 'Gloria Hallelujah', cursive;
   margin: 10px 0;
   display: block;
 }
