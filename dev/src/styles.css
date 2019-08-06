@@ -1,6 +1,6 @@
 /* FONTS */
 
-h1 {
+h1, h2 {
     font-family: 'Special Elite', cursive;
 }
 
@@ -19,7 +19,6 @@ p {
   background-size: cover;
   background-position: center;
   padding: 150px 0;
-  height: 98vh;
 }
 
 .banner h1 {
@@ -79,4 +78,9 @@ p {
 .btn-gradient:hover {
   background: linear-gradient(#147EFF, #0F67DA);
   color: white;
+}
+
+/* HEADERS */
+h2 {
+  font-size: 24px;
 }

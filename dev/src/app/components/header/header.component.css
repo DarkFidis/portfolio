@@ -6,6 +6,8 @@ div {
   background-color: #004790;
   height: 98vh;
   padding-top: 20px;
+  position: fixed;
+  width: 25.5%;
 }
 
 img {
