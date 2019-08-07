@@ -1,0 +1,9 @@
+h2 {
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #FFC29B;
+  font-weight: bold;
+}
