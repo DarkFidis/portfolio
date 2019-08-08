@@ -22,6 +22,6 @@ a:hover {
   font-weight: bold;
 }
 
-li a {
+li a, h2 a {
   font-family:inherit;
 }
