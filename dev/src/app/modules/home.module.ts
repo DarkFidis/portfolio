@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { LayoutModule } from './layout.module';
 
 import { PresentationComponent } from '../components/presentation/presentation.component';
 import { SkillsComponent } from '../components/skills/skills.component';
@@ -20,7 +21,8 @@ import { HOME_ROUTING } from '../routes/home.routing';
   ],
   imports: [
     CommonModule,
-    RouterModule.forChild(HOME_ROUTING)
+    RouterModule.forChild(HOME_ROUTING),
+    LayoutModule
   ]
 })
 
