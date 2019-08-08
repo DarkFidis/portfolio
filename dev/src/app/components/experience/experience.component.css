@@ -8,6 +8,20 @@ li {
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
 
+img {
+  margin: 30px;
+}
+
 .experience {
   margin-bottom: 80px;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #FFC29B;
+  font-weight: bold;
+}
+
+li a {
+  font-family:inherit;
 }
