@@ -4,7 +4,7 @@ import { RouterModule } from '@angular/router';
 
 import { PROJECTS_ROUTING } from '../routes/projets.routing';
 
-import { ProjectListComponent } from '../components/project-list/project-list.component';
+import { ProjectListComponent } from '../components/projects/project-list/project-list.component';
 
 @NgModule({
   declarations: [

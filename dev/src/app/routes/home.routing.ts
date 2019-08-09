@@ -1,10 +1,10 @@
 import { Route } from '@angular/router';
 
-import { PresentationComponent } from '../components/presentation/presentation.component';
-import { SkillsComponent } from '../components/skills/skills.component';
-import { EducationComponent } from '../components/education/education.component';
-import { ExperienceComponent } from '../components/experience/experience.component';
-import { ContactComponent } from '../components/contact/contact.component';
+import { PresentationComponent } from '../components/home/presentation/presentation.component';
+import { SkillsComponent } from '../components/home/skills/skills.component';
+import { EducationComponent } from '../components/home/education/education.component';
+import { ExperienceComponent } from '../components/home/experience/experience.component';
+import { ContactComponent } from '../components/home/contact/contact.component';
 
 export const HOME_ROUTING: Route[] = [
   {
