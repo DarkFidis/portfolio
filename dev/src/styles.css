@@ -6,6 +6,7 @@
 @import "./plugins/wagon-components/banner.css";
 /* CARDS */
 @import "./plugins/wagon-components/card-product.css";
+@import "./plugins/wagon-components/card-trip.css";
 /* AVATARS */
 @import "./plugins/wagon-components/avatar.css";
 
