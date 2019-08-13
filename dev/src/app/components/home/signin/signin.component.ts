@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder } from '@angular/forms';
 import { AuthService } from '../../../services/auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-signin',
@@ -13,10 +14,11 @@ export class SigninComponent implements OnInit {
 
   constructor(
     private fb: FormBuilder,
-    private authService: AuthService
+    private authService: AuthService,
+    private router: Router
   ) { }
 
-  ngOnInit() {
+  ngOnInit() {    
     this.signinForm = this.fb.group({
       username: [''],
       password: ['']
@@ -24,7 +26,7 @@ export class SigninComponent implements OnInit {
   }
 
   public trySignin() {
-    this.authService.signin(this.form.value).subscribe(() => {
+    this.authService.signin(this.signinForm.value).subscribe(() => {
       this.router.navigate(['/']);
     }, err => {
       this.error = err.error
