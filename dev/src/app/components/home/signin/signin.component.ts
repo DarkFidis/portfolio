@@ -9,6 +9,7 @@ import { AuthService } from '../../../services/auth.service';
 })
 export class SigninComponent implements OnInit {
   public signinForm: FormGroup;
+  public error: any;
 
   constructor(
     private fb: FormBuilder,
@@ -23,7 +24,11 @@ export class SigninComponent implements OnInit {
   }
 
   public trySignin() {
-
+    this.authService.signin(this.form.value).subscribe(() => {
+      this.router.navigate(['/']);
+    }, err => {
+      this.error = err.error
+    })
   }
 
 }
