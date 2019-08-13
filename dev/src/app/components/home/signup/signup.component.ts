@@ -23,8 +23,12 @@ export class SignupComponent implements OnInit {
     });
   }
 
-  public trySignup() {
-
+  public trySignup(): void {
+    this.authService.signup(this.signupForm.value).subscribe(( user: User) => {
+      this.router.navigate(['/signin'])
+    }, err => {
+      this.error = err;
+    })
   }
 
 }
