@@ -18,11 +18,11 @@ export class SignupComponent implements OnInit {
       username: [''],
       email: [''],
       password: ['']
-    })
+    });
   }
 
   public trySignup() {
-    
+
   }
 
 }

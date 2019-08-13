@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { LayoutModule } from './layout.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { PresentationComponent } from '../components/home/presentation/presentation.component';
 import { SkillsComponent } from '../components/home/skills/skills.component';
@@ -26,7 +27,8 @@ import { HOME_ROUTING } from '../routes/home.routing';
   imports: [
     CommonModule,
     RouterModule.forChild(HOME_ROUTING),
-    LayoutModule
+    LayoutModule,
+    ReactiveFormsModule
   ]
 })
 
