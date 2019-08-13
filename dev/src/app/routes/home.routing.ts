@@ -5,6 +5,8 @@ import { SkillsComponent } from '../components/home/skills/skills.component';
 import { EducationComponent } from '../components/home/education/education.component';
 import { ExperienceComponent } from '../components/home/experience/experience.component';
 import { ContactComponent } from '../components/home/contact/contact.component';
+import { SignupComponent } from '../components/home/signup/signup.component';
+import { SigninComponent } from '../components/home/signin/signin.component';
 
 export const HOME_ROUTING: Route[] = [
   {
@@ -31,5 +33,15 @@ export const HOME_ROUTING: Route[] = [
     path: 'contact',
     pathMatch: 'full',
     component: ContactComponent
+  },
+  {
+    path: 'signin',
+    pathMatch: 'full',
+    component: SigninComponent
+  },
+  {
+    path: 'signup',
+    pathMatch: 'full',
+    component: SignupComponent
   }
 ];
