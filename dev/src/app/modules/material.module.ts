@@ -19,9 +19,7 @@ import {
 
 @NgModule({
   declarations: [],
-  imports: [
-    MODULES
-  ],
+  imports: MODULES,
   exports: MODULES
 })
 export class MaterialModule { }
