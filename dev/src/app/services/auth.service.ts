@@ -11,12 +11,29 @@ import { JwtToken } from '../models/jwtToken.model';
 })
 export class AuthService {
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {
+    this.initToken();
+  }
 
   public jwtToken: BehaviorSubject<JwtToken> = new BehaviorSubject({
     isAuth: null,
     token: null
   })
+
+  public initToken(): void {
+    const token = localStorage.getItem('jwt');
+    if(token) {
+      this.jwtToken.next({
+        isAuth: true,
+        token: token
+      });
+    } else {
+      this.jwtToken.next({
+        isAuth: false,
+        token: null
+      });
+    }
+  }
 
   public signup(user: User): Observable<User> {
     return this.http.post<User>('/api/auth/signup');
