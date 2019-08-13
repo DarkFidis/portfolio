@@ -8,6 +8,8 @@ import { APP_ROUTING } from './app.routing';
 
 import { AppComponent } from './app.component';
 
+import { AuthService } from './services/auth.service';
+
 
 
 
@@ -21,7 +23,7 @@ import { AppComponent } from './app.component';
     CoreModule,
     RouterModule.forRoot(APP_ROUTING)
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
