@@ -6,6 +6,7 @@ const fs = require('fs');
 const RSA_KEY_PRIVATE = fs.readFileSync('./rsa/key')
 
 exports.signup = (req, res, next) => {
+  console.log('Signup-ing')
   const newUser = new User({
     email: req.body.email,
     name: req.body.name,
