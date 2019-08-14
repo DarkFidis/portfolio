@@ -1,9 +1,9 @@
-import { User } from '../models/user.model';
+const User = require('../models/user.model')
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const fs = require('fs');
 
-const RSA_KEY_PRIVATE = fs.readFileSync('../rsa/key')
+const RSA_KEY_PRIVATE = fs.readFileSync('./rsa/key')
 
 exports.signup = (req, res, next) => {
   const newUser = new User({
