@@ -50,4 +50,12 @@ export class AuthService {
       })
     )
   }
+
+  public logout(): void {
+    this.jwtToken.next({
+      isAuth: false,
+      token: null
+    });
+    localStorage.removeItem('jwt');
+  }
 }
