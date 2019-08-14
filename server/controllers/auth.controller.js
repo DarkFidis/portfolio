@@ -9,7 +9,8 @@ exports.signup = (req, res, next) => {
   const newUser = new User({
     email: req.body.email,
     name: req.body.name,
-    password: bcrypt.hashSync(req.body.password, bcrypt.genSaltSync(8))
+    password: bcrypt.hashSync(req.body.password, bcrypt.genSaltSync(8)),
+    role: 'user'
   })
 
   newUser.save((err) => {
