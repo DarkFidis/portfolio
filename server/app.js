@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const passport = require('passport');
 const multer = require('multer');
 const mongoose = require('mongoose');
+const path = require('path');
 
 mongoose.connect('mongodb://darkharp:666fidis@ds263127.mlab.com:63127/portfolio_user', {}, (err) => {
   if(err) {
@@ -15,6 +16,14 @@ mongoose.connect('mongodb://darkharp:666fidis@ds263127.mlab.com:63127/portfolio_
 
 const routes = require('./routes');
 
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.static(path.join(__dirname, '../home_app')));
+
 app.use('/api', routes)
+
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, '../home_app'));
+})
 
 app.listen(3000);
