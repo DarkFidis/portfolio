@@ -23,7 +23,7 @@ exports.signup = (req, res, next) => {
 };
 
 exports.signin = (req, res, next) => {
-  User.findOne({ 'email': req.body.email }).exec((err, user) => {
+  User.findOne({ 'name': req.body.name }).exec((err, user) => {
     if(user && bcrypt.compareSync(req.body.password, user.password)) {
       const token = jwt.sign({}, RSA_KEY_PRIVATE, {
         algorithm: 'RS256',

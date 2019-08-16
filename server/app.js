@@ -14,7 +14,7 @@ mongoose.connect('mongodb://darkharp:666fidis@ds263127.mlab.com:63127/portfolio_
   }
 });
 
-const routes = require('./routes');
+const routes = require('./routes/index');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));

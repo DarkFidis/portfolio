@@ -9,6 +9,7 @@ import { APP_ROUTING } from './app.routing';
 import { AppComponent } from './app.component';
 
 import { AuthService } from './services/auth.service';
+import { AuthGuard } from './guards/auth.guard';
 
 
 
@@ -23,7 +24,7 @@ import { AuthService } from './services/auth.service';
     CoreModule,
     RouterModule.forRoot(APP_ROUTING)
   ],
-  providers: [AuthService],
+  providers: [AuthService, AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

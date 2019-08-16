@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { JwtToken } from '../../models/jwtToken.model';
-
+import { Subscription } from 'rxjs/Subscription';
 import { AuthService } from '../../services/auth.service';
 
 
@@ -12,16 +12,21 @@ import { AuthService } from '../../services/auth.service';
 export class HeaderComponent implements OnInit {
 
   constructor(private authService: AuthService) { }
+  public sub: Subscription
   public jwtToken: JwtToken;
 
   ngOnInit() {
-    this.authService.jwtToken.subscribe((jwtToken) => {
+    this.sub = this.authService.jwtToken.subscribe((jwtToken) => {
       this.jwtToken = jwtToken;
-    })
+    });
   }
 
   public logout(): void {
     this.authService.logout();
+  }
+
+  ngOnDestroy() {
+    if(this.sub) { this.sub.unsubscribe(); }
   }
 
 }
