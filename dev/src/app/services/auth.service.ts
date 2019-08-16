@@ -10,6 +10,7 @@ import { JwtToken } from '../models/jwtToken.model';
   providedIn: 'root'
 })
 export class AuthService {
+  public subscription: Subscription;
 
   constructor(private http: HttpClient) {
     this.initToken();
@@ -19,7 +20,7 @@ export class AuthService {
   public jwtToken: BehaviorSubject<JwtToken> = new BehaviorSubject({
     isAuth: null,
     token: null
-  })
+  });
 
   public initToken(): void {
     const token = localStorage.getItem('jwt');

@@ -29,7 +29,7 @@ export class SignupComponent implements OnInit {
 
   public trySignup(): void {
     this.authService.signup(this.signupForm.value).subscribe(( user: User) => {
-      this.router.navigate(['/signin'])
+      this.router.navigate(['/home/signin'])
     }, err => {
       this.error = err;
     })
