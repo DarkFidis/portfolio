@@ -28,6 +28,7 @@ exports.signin = (req, res, next) => {
     if(user && bcrypt.compareSync(req.body.password, user.password)) {
       const token = jwt.sign({}, RSA_KEY_PRIVATE, {
         algorithm: 'RS256',
+        expiresIn: '300s',
         subject: user._id.toString()
       });
       res.status(200).json(token);
@@ -53,5 +54,24 @@ exports.isLoggedIn = (req, res, next) => {
         next();
       })
     })
+  }
+}
+
+exports.refreshToken = (req, res, next) => {
+  const token = req.headers.authorization;
+  if(token) {
+    jwt.verify(token, RSA_PUBLIC_KEY, (err, decoded) => {
+      if(err) {
+        return res.status(403).json('Token invalide');
+      }
+      const newToken = jwt.sign({}, RSA_KEY_PRIVATE, {
+        algorithm: 'RS256',
+        expiresIn: '300s',
+        subject: decoded.sub
+      });
+      res.status(200).json(newToken);
+    })
+  } else {
+    res.status(403).json('Pas de token')
   }
 }
