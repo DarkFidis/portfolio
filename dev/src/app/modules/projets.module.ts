@@ -6,10 +6,12 @@ import { PROJECTS_ROUTING } from '../routes/projets.routing';
 import { AuthGuard } from '../guards/auth.guard';
 
 import { ProjectListComponent } from '../components/projects/project-list/project-list.component';
+import { PaladinhomeComponent } from '../components/paladin/paladinhome/paladinhome.component';
 
 @NgModule({
   declarations: [
-    ProjectListComponent
+    ProjectListComponent,
+    PaladinhomeComponent
   ],
   imports: [
     CommonModule,
