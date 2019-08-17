@@ -11,7 +11,7 @@ export const PROJECTS_ROUTING: Route[] = [
   },
   {
     path: 'paladin',
-    canActivate: [AuthGuard],
+    //canActivate: [AuthGuard],
     component: PaladinhomeComponent
   }
 ];
