@@ -1,6 +1,5 @@
 /* DEPENDANCES */
 @import "~@fortawesome/fontawesome-free/css/all.css";
-@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
 /* BUTTONS */
 @import "./plugins/wagon-components/button.css";
 /* BANNERS */
@@ -10,6 +9,8 @@
 @import "./plugins/wagon-components/card-trip.css";
 /* AVATARS */
 @import "./plugins/wagon-components/avatar.css";
+/* FORMS */
+@import "./plugins/darkcode-components/forms.css";
 
 
 /* FONTS */
@@ -26,6 +27,10 @@ a {
 p, li {
   /*font-family: 'Signika', sans-serif;*/
   font-family: 'Merriweather', serif;
+}
+
+.banner {
+  min-height: 98vh;
 }
 
 

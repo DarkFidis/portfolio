@@ -1,19 +1,21 @@
-<div fxLayout="column" class="py-5" fxLayoutAlign="center center">
-  <mat-card>
-    <mat-card-title>Inscription</mat-card-title>
-    <mat-card-content>
-      <form [formGroup]="signupForm" fxLayout="column" fxLayoutGap="15px" fxLayoutAlign="center center">
-        <mat-form-field>
-          <input matInput type="text" formControlName="username" placeholder="Nom">
-        </mat-form-field>
-        <mat-form-field>
-          <input matInput type="email" formControlName="email" placeholder="Email">
-        </mat-form-field>
-        <mat-form-field>
-          <input matInput type="password" formControlName="password" placeholder="Mot de passe">
-        </mat-form-field>
-        <button mat-raised-button color="primary" (click)="trySignup()">Inscription</button>
-      </form>
-    </mat-card-content>
-  </mat-card>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../../../assets/img/fond.jpg);">
+  <div class="login-box">
+    <h1>Inscription</h1>
+    <form [formGroup]="signupForm">
+      <div class="text-box">
+        <i class="fas fa-user"></i>
+        <input type="text" formControlName="username" placeholder="Nom">
+      </div>
+      <div class="text-box">
+        <i class="fas fa-envelope"></i>
+        <input type="email" formControlName="email" placeholder="Email">
+      </div>
+      <div class="text-box">
+        <i class="fas fa-lock"></i>
+        <input type="password" formControlName="password" placeholder="Mot de passe">
+      </div>
+
+      <button class="btn" (click)="trySignup()">Se connecter</button>
+    </form>
+  </div>
 </div>
