@@ -1,0 +1,71 @@
+.about {
+    padding: 100px 0px;
+    background-color: rgb(255, 255, 255);
+}
+
+.about-container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1140px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.about-body {
+    display: flex;
+    margin: 0px -15px;
+    width: 100%;
+    font-family: "Open Sans", sans-serif;
+    overflow-x: hidden;
+    font-size: 15px;
+    color: rgb(53, 64, 78);
+}
+
+.about-portrait {
+    height: 600px;
+    width: 400px;
+    background-image: url(../assets/images/Versailles.jpg);
+    background-size: cover;
+}
+
+.about-info {
+    padding: 0px 15px;
+    width: 50%;
+}
+
+@media (min-width: 992px) {
+    .about-info-content {
+        margin-left: 1.5rem;
+    }
+}
+
+.about-info-title {
+    letter-spacing: 0.5px;
+    font-size: 24px;
+    margin-bottom: 1.5rem;
+}
+
+.about-info-desc {
+    color: rgb(112, 112, 112);
+    line-height: 1.6;
+    margin-top: 0px;
+    margin-bottom: 1rem;
+}
+
+.about-info-label {
+    width: 25%;
+    padding-right: 15px;
+    font-weight: 700;
+}
+
+.about-info-value {
+    width: 75%;
+    padding: 0px 15px;
+    margin-bottom: 0.5rem;
+    margin-left: 0px;
+}
+
