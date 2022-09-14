@@ -1,0 +1,78 @@
+.timeline {
+    border-left: 3px solid rgb(116, 185, 255);
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    position: relative;
+    padding: 0px 30px;
+    margin-left: 280px;
+}
+
+.exp {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.exp:before {
+    content: "";
+    position: absolute;
+    left: -45px;
+    top: 0;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 3px solid rgb(116, 185, 255);
+    background: #fff;
+}
+
+.exp:after {
+    content: "";
+    position: absolute;
+    left: -39px;
+    top: 6px;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: rgb(116, 185, 255);
+    z-index: 10;
+}
+
+.exp-place {
+    display:flex;
+    margin-bottom: 15px;
+    justify-content: space-between;
+}
+
+.exp-meta {
+    position: absolute;
+    left: -280px;
+    top: 0px;
+}
+
+.exp-desc {
+    color: #666;
+}
+
+.exp-company {
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.exp-location {
+    color: rgb(132, 129, 122);
+}
+
+.exp-location i {
+    margin-right: 5px;
+}
+
+.exp-meta-job {
+    font-size: 18px;
+    color: rgb(116, 185, 255);
+}
+
+.exp-meta-period {
+    color: #757984;
+}

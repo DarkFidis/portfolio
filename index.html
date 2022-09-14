@@ -1,10 +1,15 @@
 <html>
     <head>
         <title>Matthieu Seynaeve</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/6d921e8955.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/global.css">
         <link rel="stylesheet" href="css/navbar.css">
         <link rel="stylesheet" href="css/banner.css">
         <link rel="stylesheet" href="css/about.css">
+        <link rel="stylesheet" href="css/resume.css">
     </head>
     <body>
         <div class="navbar">
@@ -14,19 +19,19 @@
                         <a href="/">Home</a>
                     </li>
                     <li class="navbar-button">
-                        <a href="">A propos</a>
+                        <a href="#about">A propos</a>
                     </li>
                     <li class="navbar-button">
-                        <a href="">Parcours</a>
+                        <a href="#resume">Parcours</a>
                     </li>
                     <li class="navbar-button">
-                        <a href="">Education</a>
+                        <a href="#education">Education</a>
                     </li>
                     <li class="navbar-button">
-                        <a href="">Skills</a>
+                        <a href="#skills">Skills</a>
                     </li>
                     <li class="navbar-button">
-                        <a href="">Projets</a>
+                        <a href="#work">Projets</a>
                     </li>
                 </ul>
             </div>
@@ -62,6 +67,104 @@
                             <div class="flex">
                                 <div class="about-info-label">Adresse</div>
                                 <div class="about-info-value">99 Avenue du Général Leclerc, 78220 VIROFLAY</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="resume">
+            <div class="section-wrapper">
+                <div class="section-container">
+                    <h3 class="section-title">PARCOURS</h3>
+                    <p class="section-desc">Expériences professionnelles</p>
+                    <div class="timeline">
+                        <div class="exp">
+                            <div class="exp-place">
+                                <h3 class="exp-company">La Poste</h3>
+                                <div class="exp-location">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    Paris, France
+                                </div>
+                            </div>
+                            <div class="exp-meta">
+                                <div class="exp-meta-job">Développeur full-stack</div>
+                                <div class="exp-meta-period">Depuis octobre 2019</div>
+                            </div>
+                            <div class="exp-desc">
+                                <p>Maintenance et évolution d'Okapi, plate-forme d'API management de la Poste, et autres missions internes à La Poste</p>
+                                <p><strong>Environnement technique :</strong> Linux, Node JS, React, Git, TypeScript, Redis, Docker, GraphQL</p>
+                                <p><strong>Résultats obtenus :</strong></p>
+                                <ul>
+                                    <li>Développement d'un formulaire de douanes pour Colissimo</li>
+                                    <li>Développement d'une interface d'authentification double-facteur pour Digiposte</li>
+                                    <li>Développement d'une interface d'administration pour Okapi</li>
+                                    <li>Développement d'une bibliothèque de composants pour la Poste</li>
+                                    <li>Automatisation de tests Postman</li>
+                                    <li>Migration du backend d'Okapi</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="exp">
+                            <div class="exp-place">
+                                <h3 class="exp-company">Chubb</h3>
+                                <div class="exp-location">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    Cergy, France
+                                </div>
+                            </div>
+                            <div class="exp-meta">
+                                <div class="exp-meta-job">Développeur front-end</div>
+                                <div class="exp-meta-period">Février 2019 - Juillet 2019</div>
+                            </div>
+                            <div class="exp-desc">
+                                <p>Maintenance de l’application UniCom</p>
+                                <p>Intégration d’évolutions à l’application UniCom</p>
+                                <p><strong>Environnement technique :</strong> Windows, Kony Visualizer, SQLite, Jira, Git (SourceTree)</p>
+                                <p><strong>Résultats obtenus :</strong></p>
+                                <ul>
+                                    <li>Livraison d’une version d’UniCom recettable</li>
+                                    <li>Correction de bugs</li>
+                                    <li>Evolutions apportées :</li>
+                                    <ul>
+                                        <li>Gestion d'erreurs pour les Web-Services</li>
+                                        <li>Ajout de critères de recherche pour les sites des clients</li>
+                                    </ul>
+                                    <li>Amélioration de l'environnement de travail</li>
+                                    <ul>
+                                        <li>Ajout d’un traceur de fonctions</li>
+                                        <li>Implémentation d’une fonctionnalité de tests automatiques</li>
+                                    </ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="exp">
+                            <div class="exp-place">
+                                <h3 class="exp-company">Galigéo</h3>
+                                <div class="exp-location">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    Paris, France
+                                </div>
+                            </div>
+                            <div class="exp-meta">
+                                <div class="exp-meta-job">Développeur front-end</div>
+                                <div class="exp-meta-period">Mars 2018 - Novembre 2018</div>
+                            </div>
+                            <div class="exp-desc">
+                                <p>Développement d'une interface d'administration pour le produit</p>
+                                <ul>
+                                    <li>Spécification du produit : User stories & Maquettes</li>
+                                    <li>Développement de la partie cliente (HTML5, CSS3 et jQuery)</li>
+                                    <li>Test et debug du produit</li>
+                                </ul>
+                                <p>Maintenance du produit Galigeo Enterprise</p>
+                                <ul>
+                                    <li>Debug avec la console de Google Chrome</li>
+                                    <li>Gestion des différentes versions du produit avec SVN</li>
+                                    <li>Ecriture de tests avec JasmineJS</li>
+                                </ul>
+                                <p><strong>Environnement technique :</strong> Windows, SVN, Java EE, Jenkins, Grunt, HTML5, CSS3, jQuery, JasmineJS</p>
+                                <p><strong>Résultats obtenus :</strong> Développement et déploiement d'une démo du produit pour le grand public.</p>
                             </div>
                         </div>
                     </div>
