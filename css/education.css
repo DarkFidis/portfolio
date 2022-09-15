@@ -1,0 +1,32 @@
+.formation {
+    max-width: 33.333%;
+    margin-bottom: 45px;
+    padding: 0px 15px;
+}
+
+.formation-body {
+    padding: 0px 30px;
+}
+
+.formation-title a {
+    font-size: 18px;
+    color: rgb(116, 185, 255);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-decoration: none;
+}
+
+.formation-org {
+    margin-bottom: 0px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.formation-date {
+    color: rgb(138, 138, 138);
+    margin-bottom: 15px;
+}
+
+.formation-desc {
+    color: #666;
+}
