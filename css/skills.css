@@ -1,0 +1,17 @@
+.skills {
+    padding: 0px 120px;
+    text-align: center;
+}
+
+.skill {
+    font-family: Montserrat, sans-serif;
+    color: rgb(112, 112, 112);
+    box-shadow: rgb(0 0 0 / 14%) 0px 1px 4px 0px;
+    padding: 6px 30px;
+    display: inline-block;
+    margin-right: 10px;
+    border: 1px solid rgb(245, 245, 245);
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
